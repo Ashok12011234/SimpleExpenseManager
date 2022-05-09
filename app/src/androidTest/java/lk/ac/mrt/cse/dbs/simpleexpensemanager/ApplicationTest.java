@@ -46,9 +46,9 @@ public class ApplicationTest {
 
     @Test
     public void testAddAccount() {
-        assertEquals(2, expenseManager.getAccountNumbersList().size());
+
         expenseManager.addAccount("123", "ABC Bank", "John", 5.5);
-        assertEquals(3, expenseManager.getAccountNumbersList().size());
+        assertEquals(1, expenseManager.getAccountNumbersList().size());
     }
 
     @Test
